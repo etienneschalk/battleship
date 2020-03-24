@@ -47,6 +47,8 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(3000, () => {
-  console.log("listening on *:3000");
+http.listen(process.env.PORT || 3000, () => {
+  let host = server.address().address
+  let port = server.address().port
+  console.log('App listening at http://%s:%s', host, port)
 });
