@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+  font: 13px Helvetica, Arial;
+}
+
+#chat {
+  width: 33%;
+}
+form {
+  background: #000;
+  padding: 3px;
+}
+
+form input {
+  border: 0;
+}
+form button {
+  background: rgb(130, 224, 255);
+  border: none;
+}
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+#messages li {
+  padding: 5px 10px;
+ }
+#messages li:nth-child(odd) {
+  background: #eee;
+ }
